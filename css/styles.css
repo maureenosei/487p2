@@ -1,0 +1,228 @@
+body {
+  color: white; /* This is only if alternative background is used */
+}
+
+/* Top Container Style */
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f7f7f7;
+  background: black;
+  background: linear-gradient(
+    185deg,
+    black 50%,
+    rgb(156, 124, 79) 70%,
+    rgb(255, 205, 135) 80%,
+    rgba(252, 176, 69, 1) 90%
+  );
+  /* background: linear-gradient(
+    185deg,
+    rgb(253, 241, 225) 4%,
+    rgb(255, 205, 135) 54%,
+    rgba(252, 176, 69, 1) 85%
+  );*/
+  padding-left: 9vw;
+  padding-right: 9vw;
+}
+
+/* Headers and Title */
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+#title {
+  font-size: 60px;
+  letter-spacing: 13px;
+  padding-top: 5vh;
+}
+
+/*Images*/
+
+.imagesdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+}
+
+.pictures {
+  border-radius: 5px;
+}
+
+/* Paragraph Style  and Font Stylings */
+.para {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.paragraph {
+  display: flex;
+  padding: 5vh;
+  align-items: center;
+  border-radius: 5px;
+  line-height: 30px;
+}
+
+/* Main Dividers */
+
+.info-div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vh;
+  align-items: center;
+}
+
+.bottom-div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  border-radius: 5px;
+  line-height: 30px;
+  padding: 5vh;
+  align-items: center;
+  text-align: center;
+}
+
+/* Burning Effect*/
+
+.burning {
+  color: white; /* A light text makes a nice bright flame source */
+  letter-spacing: 3em; /* Big text shows off the effect best */
+  font-weight: bold;
+}
+
+.burning2 {
+  color: white; /* A light text makes a nice bright flame source */
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* Quiz style */
+
+.quiz-container {
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-top: 8vw;
+
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+.quiz-container a {
+  text-decoration: none;
+  color: #333;
+}
+
+#quiz-header,
+#quiz-start-screen,
+#quiz-results-screen,
+#quiz-counter {
+  text-align: center;
+  padding: 10px;
+}
+
+.question {
+  font-size: 1.5em;
+  margin-bottom: 3vh;
+}
+
+.answers {
+  list-style: none;
+  padding: 0;
+}
+
+.answers a {
+  display: block;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.answers a.correct {
+  background: rgb(104, 211, 104);
+}
+.answers a.incorrect {
+  background: rgb(126, 8, 8);
+}
+
+.answers a.correct,
+.answers a.incorrect {
+  color: #fff;
+}
+
+#quiz-controls {
+  background: #333;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#quiz-results {
+  font-size: 1.5em;
+}
+
+#quiz-start-btn {
+  margin-top: 15vh;
+  font-weight: 500;
+}
+#quiz-buttons a,
+.quiz-container .quiz-button {
+  margin: 5px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #333;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+}
+#quiz-buttons a {
+  background: #fff;
+  color: #333;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+/* Quiz State Overrides */
+
+.quiz-results-state #quiz-controls {
+  background: none;
+  padding: 0;
+}
+.quiz-results-state #quiz-buttons a {
+  background: #333;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1275px) {
+  .imagesdiv {
+    display: none;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .top-container {
+    padding: 10px;
+  }
+}
